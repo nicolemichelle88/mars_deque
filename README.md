@@ -22,8 +22,8 @@ Follow these steps to set up and run the project on your local machine.
 ### Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/mars-deque-university-accessibility-tests.git
-cd mars-deque-university-accessibility-tests
+git clone git@github.com:nicolemichelle88/mars_deque.git
+cd mars_deque
 ```
 
 ### Set Up the Project
