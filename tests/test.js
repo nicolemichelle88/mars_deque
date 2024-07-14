@@ -6,8 +6,6 @@ import { describe, it, after, before } from 'mocha';
 describe('Mars Deque University Accessibility Tests', function() {
     let driver;
 
-    // Set a global timeout of 10 seconds (10000ms) for all tests in this suite
-    this.timeout(10000);
 
     before(async function() {
         driver = await new Builder().forBrowser('chrome').build();
@@ -19,7 +17,7 @@ describe('Mars Deque University Accessibility Tests', function() {
     });
 
     it('should load the main-nav', async function() {
-        await driver.wait(until.elementLocated(By.css('#main-nav')), 10000);
+        await driver.wait(until.elementLocated(By.css('#main-nav')), 3000);
         const mainNav = await driver.findElement(By.css('#main-nav'));
         const isDisplayed = await mainNav.isDisplayed();
         expect(isDisplayed).to.be.true;
